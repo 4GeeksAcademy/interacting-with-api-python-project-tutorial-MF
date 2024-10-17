@@ -17,8 +17,6 @@ client_secret = os.environ.get("CLIENT_SECRET")
 con = spotipy.Spotify(auth_manager= SpotifyClientCredentials(client_id=client_id, client_secret=client_secret))
 print('🟢 Conexion exitosa con Spotify API')
 
-#Almacenar spotipy.Spotiify() en una varible, para resumir codigo
-
 #ID del artista - Ricardo Arjona
 artist_id = "0h1zs4CTlU9D2QtgPxptUD"
 
@@ -36,6 +34,6 @@ fig = scatter_plot.get_figure()
 scatter_plot.figure.savefig("scatter_plot.png")
 scatter_plot.figure.show()
 
-print('Como podemor ver no hay relacion directa entre lo largo de la cancion y su popularidad')
+print('Como podemor ver no hay relacion directa entre lo largo de las canciones y su popularidad')
 
 del con
